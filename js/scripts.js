@@ -2,24 +2,24 @@ $(document).ready(function() {
   $("form#normInput").submit(function(event){
     event.preventDefault();
     const userInput = $("input#input").val();
-    pigLatin(userInput);
+    let resultArray = pigLatin(userInput);
+    console.log(resultArray);
   });   
 });
 
 function pigLatin(userInput) {
   userInput = userInput.toLowerCase()
   const vowels = ["a", "e", "i", "o", "u"];
-  inputArray = userInput.split('');
+  //inputArray = userInput.split('');
+  let pigWord = "";
 
-  for(i = 0; i < inputArray.length; i++){
-    if (vowels.includes(inputArray[i])){
-      console.log("yup I'm catching it");
-    }
+  if (vowels.includes(userInput[0])) {
+    return (userInput + "way");
   };
-  
 };
 
-
-  // if () {
-  //   alert("You haven't entered letters.");
-  // } 
+    // for(i = 0; i < userInput.length; i++){
+    //   pigWord = pigWord + userInput[i] + "way";
+    // };
+    // console.log(userInput);
+//   } else {
