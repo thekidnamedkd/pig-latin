@@ -8,6 +8,33 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+## Specs
+
+The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+  * Input: 3
+  * Output: 3
+
+  The progam identifies if character is a vowel or consonant.
+  * Input: 'a'
+  * Output: true
+
+  The program identifies if first character of a word is vowel or consonant.
+  * Input: 'badger'
+  * Output: false
+
+The program adds "way" to single-letter words beginning with a vowel.
+  * Input: i
+  * Output: iway
+
+The program identifies if first three characters of word contain 'qu'.
+  * Input: 'query'
+  * Output: true
+
+The program identifies if first character of a word is 'y'.
+  * Input: 'yarn'
+  * Output: true
+
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
@@ -34,4 +61,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_{List of contributors or company name}_**
