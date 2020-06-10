@@ -9,7 +9,13 @@ $(document).ready(function() {
 function pigLatin(userInput) {
   userInput = userInput.toLowerCase()
   const vowels = ["a", "e", "i", "o", "u"];
-  console.log(userInput.includes(vowels[0]));
+  inputArray = userInput.split('');
+
+  for(i = 0; i < inputArray.length; i++){
+    if (vowels.includes(inputArray[i])){
+      console.log("yup I'm catching it");
+    }
+  };
   
 };
 
