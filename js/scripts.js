@@ -10,25 +10,16 @@ $(document).ready(function() {
 function pigLatin(userInput) {
   userInput = userInput.toLowerCase()
   const vowels = ["a", "e", "i", "o", "u"];
-  //inputArray = userInput.split('');
-  let consRemoved = "";
 
   if (vowels.includes(userInput[0])) {
     return (userInput + "way");
-  } else {
-    for (i=0; i < userInput.length; i++) {
-      consRemoved = userInput.slice(); //this is where the problem lies
-      userInput = (userInput + consRemoved + "ay"); //maybe this too.
-      return userInput;
+
+    } else {
+      for (firstVow of userInput) {
+        if (vowels.includes(firstVow)) {
+        indexVow = userInput.indexOf(firstVow);
+      }
     }
+    return userInput.slice(indexVow) + userInput.slice(0, indexVow) + "ay";
   }
 };
-
-
-
-
-    // for(i = 0; i < userInput.length; i++){
-    //   pigWord = pigWord + userInput[i] + "way";
-    // };
-    // console.log(userInput);
-//   } else {
